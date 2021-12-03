@@ -135,8 +135,6 @@ section{
 
 }
 
-
-
 .about .about-content2 {
 	display: flex;
 	flex-wrap: wrap;
@@ -232,9 +230,6 @@ section{
 }
 
 
-
-
-
 /*reference Section*/
 .reference{
 	font-family: montserrat, sans-serif;
@@ -258,3 +253,105 @@ section{
 .reference .reference-content a:hover{
 	text-decoration: underline;
 }
+
+/* Timeline */
+.wrapper{
+	display: grid;
+    grid-template-areas:
+        "header header"
+        "section section"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+
+nav {
+    grid-area: nav;
+    
+  }
+  
+section {
+    grid-area: section;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+  }
+ 
+footer {
+    grid-area: footer;
+    text-align: center;
+	font-family: montserrat, sans-serif;
+	background-color: black;
+	opacity: 85%;
+	height: 10em;
+	padding-top: 5%;
+  }
+
+ 
+nav{
+	position: fixed;
+	width: 100%;
+	background: darkred;
+	font-family: 'Montserrat', sans-serif;
+	padding: 15px 0px;
+	z-index: 1;
+}
+ul{
+	margin-left: 100px;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+}
+
+li a{
+	display: block;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	margin-left: 30px;
+	transition: all 0.3s linear;
+}
+
+li a:hover{
+	color: black;
+}
+
+h1{
+	text-align: center;
+	padding-bottom: 30px;
+	font-family: 'Basketball', sans-serif;
+	font-size: 5em;
+    color: darkred;
+}
+
+h2{
+	color: darkred;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+p{
+	font-family: 'Montserrat', sans-serif;
+	text-align: justify;
+	margin-top: 1em ;
+  	margin-bottom: 1em ;
+
+}
+img{
+	float: right;
+	margin-left:10px;
+	clear: both;
+	border: 1px solid black;
+	width: 15%;
+}
+
+
+footer a{
+	color: white;
+}
+
+
